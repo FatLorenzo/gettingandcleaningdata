@@ -11,6 +11,7 @@ Those features (test and training) were read and merged into a data frame. The s
 As there were only the features containing the measurements on the mean and standard deviation values requested all other values were omitted.
 
 In the end the data structure looks as follows:
+
 - "subject"
 - "activity"                   
 - "tBodyAcc-mean()-X"
@@ -87,6 +88,7 @@ all others: as described in feature_info.txt
 ## Processing
 
 The script run_analysis.R takes the following steps in analysing the data:
+
 1. Reading **activity_labels** and **features** from file
 2. Reading test and training data an merges both in a data frame
 3. Filtering for required measurements by doing a simple string compare. Only those measurements containing **str()** or **mean()** in their names will be regared.
