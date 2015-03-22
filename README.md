@@ -11,6 +11,7 @@ As a prerequisite to run the R script properly, there must be a directory **gett
 
 ## Script
 The script run_analysis.R takes the following steps in analysing the data:
+
 1. Reading **activity_labels** and **features** from file
 2. Reading test and training data an merges both in a data frame
 3. Filtering for required measurements by doing a simple string compare. Only those measurements containing **str()** or **mean()** in their names will be regared.
